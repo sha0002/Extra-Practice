@@ -28,3 +28,36 @@ const user = twoObj({
 })
 
 console.log(user)
+
+
+// generics
+
+// function logstring(arg: string) {
+//     console.log(arg);
+//     return arg;
+// }
+
+// logstring('arg');
+
+// function lognum(arg: number) {
+//     console.log(arg)
+//     return arg
+// }
+
+// lognum(5)
+
+// function logarray(arg: any[]) {
+//     console.log(arg)
+//     return arg
+// }
+
+// logarray([1, 2])
+
+function logAnything<T>(arg: T): T {
+    console.log(arg)
+    return arg
+}
+
+logAnything(["shashank"])
+
+
